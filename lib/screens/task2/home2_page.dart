@@ -76,7 +76,9 @@ class Home2Page extends StatelessWidget {
             height: 20,
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              counterBloc.add(CounterDecremented());
+            },
             icon: const Icon(
               Icons.minimize,
               color: Colors.blueGrey,
@@ -86,7 +88,9 @@ class Home2Page extends StatelessWidget {
             height: 20,
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              counterBloc.add(CounterReset());
+            },
             child: const Text('Reset'),
           )
         ],

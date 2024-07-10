@@ -32,7 +32,9 @@ class Test2Page extends StatelessWidget {
                 height: 20,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  couterBloc.add(CounterDecremented());
+                },
                 icon: const Icon(
                   Icons.minimize,
                   color: Colors.blueGrey,
@@ -42,7 +44,9 @@ class Test2Page extends StatelessWidget {
                 height: 20,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  couterBloc.add(CounterReset());
+                },
                 child: const Text('Reset'),
               )
             ],
