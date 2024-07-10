@@ -30,9 +30,34 @@ class _HomePageState extends State<HomePage> {
               centerTitle: true,
             ),
             body: Center(
-              child: Text(
-                'Count is : $counter',
-                style: const TextStyle(fontSize: 27),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Count is : $counter',
+                    style: const TextStyle(fontSize: 27),
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Container(
+                      height: 50,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: const Center(
+                        child: Text(
+                          'Next Page',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
             floatingActionButton: Column(
