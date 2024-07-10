@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_practice/bloc/counter_bloc.dart';
 import 'package:flutter_bloc_practice/screens/task2/test2.dart';
 
 class Home2Page extends StatelessWidget {
@@ -6,6 +8,7 @@ class Home2Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final counterBloc = BlocProvider.of<CounterBloc>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
@@ -16,9 +19,14 @@ class Home2Page extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Count is : ',
-              style: TextStyle(fontSize: 27),
+            BlocBuilder<CounterBloc, int>(
+              bloc: counterBloc,
+              builder: (context, count) {
+                return Text(
+                  'Count is : $count',
+                  style: const TextStyle(fontSize: 27),
+                );
+              },
             ),
             const SizedBox(
               height: 40,
