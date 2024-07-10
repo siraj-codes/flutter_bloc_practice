@@ -5,6 +5,12 @@ class Test2Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Test 2 page'),
+        backgroundColor: Colors.blueGrey,
+      ),
+    );
   }
 }
