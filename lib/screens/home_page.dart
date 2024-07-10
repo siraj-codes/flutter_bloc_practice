@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             floatingActionButton: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
                   onPressed: () {
