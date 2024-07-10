@@ -64,7 +64,9 @@ class Home2Page extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              counterBloc.add(CounterIncremented());
+            },
             icon: const Icon(
               Icons.add,
               color: Colors.blueGrey,
