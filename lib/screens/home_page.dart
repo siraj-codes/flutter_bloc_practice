@@ -3,24 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
 import 'package:flutter_bloc_practice/screens/test_page.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  final counterCubit = CounterCubit();
-
-  @override
-  void dispose() {
-    counterCubit.close(); // Don't forget to close the cubit
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final counterCubit = BlocProvider.of<CounterCubit>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
