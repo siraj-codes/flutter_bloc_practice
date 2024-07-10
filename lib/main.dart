@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
-import 'package:flutter_bloc_practice/screens/task1/home_page.dart';
+// import 'package:flutter_bloc_practice/screens/task1/home_page.dart';
+import 'package:flutter_bloc_practice/screens/task2/home2_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +10,22 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   return BlocProvider(
+  //     create: (_) => CounterCubit(),
+  //     child: MaterialApp(
+  //       debugShowCheckedModeBanner: false,
+  //       title: 'Flutter Demo',
+  //       theme: ThemeData(
+  //         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+  //         useMaterial3: true,
+  //       ),
+  //       home: const HomePage(),
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +38,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const HomePage(),
+        home: const Home2Page(),
       ),
     );
   }

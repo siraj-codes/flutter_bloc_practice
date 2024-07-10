@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc_practice/screens/task2/test2.dart';
 
 class Home2Page extends StatelessWidget {
   const Home2Page({super.key});
@@ -17,7 +18,7 @@ class Home2Page extends StatelessWidget {
           children: [
             const Text(
               'Count is : ',
-              style: const TextStyle(fontSize: 27),
+              style: TextStyle(fontSize: 27),
             ),
             const SizedBox(
               height: 40,
