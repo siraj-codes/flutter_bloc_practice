@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
 
-class TestPage extends StatefulWidget {
+class TestPage extends StatelessWidget {
   const TestPage({super.key});
 
-  @override
-  State<TestPage> createState() => _TestPageState();
-}
-
-class _TestPageState extends State<TestPage> {
   @override
   Widget build(BuildContext context) {
     final counterCubit = BlocProvider.of<CounterCubit>(context);
