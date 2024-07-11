@@ -4,7 +4,7 @@ import 'package:flutter_bloc_practice/bloc/counter_bloc.dart';
 import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
 // import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
 // import 'package:flutter_bloc_practice/screens/task1/home_page.dart';
-import 'package:flutter_bloc_practice/screens/task2/home2_page.dart';
+// import 'package:flutter_bloc_practice/screens/task2/home2_page.dart';
 import 'package:flutter_bloc_practice/screens/task3/add_todo_page.dart';
 import 'package:flutter_bloc_practice/screens/task3/todo_list.dart';
 
