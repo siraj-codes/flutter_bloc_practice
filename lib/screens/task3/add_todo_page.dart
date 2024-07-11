@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc_practice/screens/task3/cubit/todo_cubit.dart';
 
 class AddTodoPage extends StatelessWidget {
   const AddTodoPage({super.key});
@@ -23,7 +25,10 @@ class AddTodoPage extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                BlocProvider.of<TodoCubit>(context)
+                    .addTodo(todotextEditingController.text.trim());
+              },
               child: const Text('Add'),
             ),
           ],

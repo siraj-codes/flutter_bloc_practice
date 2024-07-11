@@ -9,5 +9,7 @@ class TodoCubit extends Cubit<List<Todo>> {
       name: title,
       createdAt: DateTime.now(),
     );
+
+    emit([...state, todo]);
   }
 }
