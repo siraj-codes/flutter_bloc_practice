@@ -28,6 +28,7 @@ class AddTodoPage extends StatelessWidget {
               onPressed: () {
                 BlocProvider.of<TodoCubit>(context)
                     .addTodo(todotextEditingController.text.trim());
+                Navigator.of(context).pop();
               },
               child: const Text('Add'),
             ),
