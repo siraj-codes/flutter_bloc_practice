@@ -11,7 +11,9 @@ class TodoList extends StatelessWidget {
         title: const Text('Todo List'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/add-todo');
+        },
         tooltip: 'Add Todo',
         child: const Icon(Icons.add),
       ),
