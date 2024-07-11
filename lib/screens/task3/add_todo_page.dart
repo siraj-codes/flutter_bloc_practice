@@ -5,10 +5,29 @@ class AddTodoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final TextEditingController todotextEditingController =
+        TextEditingController();
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Todos'),
+        title: const Text('Add Todo'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TextField(
+              controller: todotextEditingController,
+              decoration: const InputDecoration(hintText: 'Title'),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Add'),
+            ),
+          ],
+        ),
       ),
     );
   }
