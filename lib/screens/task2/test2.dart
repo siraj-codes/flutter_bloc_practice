@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_practice/bloc/counter_bloc.dart';
+import 'package:flutter_bloc_practice/screens/task2/bloc/counter_bloc.dart';
 
 class Test2Page extends StatelessWidget {
   const Test2Page({super.key});

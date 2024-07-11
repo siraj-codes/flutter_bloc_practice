@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_practice/cubit/counter_cubit.dart';
+import 'package:flutter_bloc_practice/screens/task1/cubit/counter_cubit.dart';
 
 class TestPage extends StatelessWidget {
   const TestPage({super.key});
